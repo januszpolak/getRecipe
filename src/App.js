@@ -47,16 +47,17 @@ function App() {
           Search recipe ...
         </button>
       </form>
-      {recipes.map((recipe) => (
-        <Recipe
-          key={Math.random() * 10000}
-          title={recipe.recipe.label}
-          calories={recipe.recipe.calories}
-          image={recipe.recipe.image}
-          ingredients={recipe.recipe.ingredients}
-          className="recepies"
-        />
-      ))}
+      <div className="wrapper">
+        {recipes.map((recipe) => (
+          <Recipe
+            key={Math.random() * 10000}
+            title={recipe.recipe.label}
+            calories={recipe.recipe.calories}
+            image={recipe.recipe.image}
+            ingredients={recipe.recipe.ingredients}
+          />
+        ))}
+      </div>
     </div>
   );
 }
