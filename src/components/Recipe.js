@@ -4,7 +4,7 @@ import "./Recipe.css";
 const Recipe = ({ title, calories, image, ingredients }) => {
   return (
     <div className="recipe">
-      <h1>{title}</h1>
+      <h1 className="title">{title}</h1>
       <p>{Math.floor(calories)} kcal</p>
       <ul>
         {ingredients.map((ingredient) => (
