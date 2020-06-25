@@ -7,7 +7,7 @@ const Recipe = ({ title, calories, image, ingredients }) => {
       <p>{Math.floor(calories)} kcal</p>
       <ul>
         {ingredients.map((ingredient) => (
-          <li key={Math.random() * 100}>{ingredient.text}</li>
+          <li key={Math.random() * 10000}>{ingredient.text}</li>
         ))}
       </ul>
       <img src={image} alt="" />
