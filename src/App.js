@@ -34,7 +34,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Welcome in Recipe App</h1>
+      <h1>Welcome to Recipe App</h1>
       <form onSubmit={getSearch} className="input-group">
         <input
           type="text"
@@ -54,6 +54,7 @@ function App() {
           calories={recipe.recipe.calories}
           image={recipe.recipe.image}
           ingredients={recipe.recipe.ingredients}
+          className="recepies"
         />
       ))}
     </div>

@@ -1,8 +1,9 @@
 import React from "react";
+import "./Recipe.css";
 
 const Recipe = ({ title, calories, image, ingredients }) => {
   return (
-    <div>
+    <div className="recipe">
       <h1>{title}</h1>
       <p>{Math.floor(calories)} kcal</p>
       <ul>
